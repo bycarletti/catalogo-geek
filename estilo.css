@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.filtros {
+  margin-top: 15px;
+}
+
+.filtros button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filtros button:hover {
+  background-color: #005fa3;
+}
+
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.camiseta {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 15px;
+  width: 220px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.camiseta:hover {
+  transform: scale(1.05);
+}
+
+.camiseta img {
+  width: 100%;
+  height: auto;
+}
+
+.camiseta h3 {
+  margin: 10px 0;
+}
+
+.botao {
+  display: inline-block;
+  margin: 10px 0 20px;
+  padding: 8px 15px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
