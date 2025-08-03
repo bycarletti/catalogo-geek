@@ -1,76 +1,120 @@
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: purple;
-  color: purple;
   margin: 0;
   padding: 0;
+  background: #f4f4f4;
 }
 
 header {
   text-align: center;
-  padding: 30px 20px;
-  background-color: orange;
+  background-color: #ff3860;
+  color: white;
+  padding: 30px 15px;
 }
 
 .logo {
-  max-width: 180px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 2em;
-  color: #ff3860;
+  width: 180px;
 }
 
 .slogan {
-  font-size: 1.1em;
-  color: #ffdd57;
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
-.catalogo {
+.menu {
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.menu ul {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 8px 15px;
+}
+
+.menu a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ff3860;
+}
+
+.catalogo {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  padding: 40px 20px;
+}
+
+.catalogo.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.catalogo h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff3860;
 }
 
 .camiseta {
-  background-color: #2c2c2c;
-  border-radius: 8px;
-  margin: 15px;
-  width: 220px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-
-.camiseta:hover {
-  transform: scale(1.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .camiseta img {
-  width: 100%;
-  border-radius: 8px 8px 0 0;
+  width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .camiseta h3 {
-  margin: 10px 0;
-  color: #ffdd57;
+  margin: 15px 0 10px;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
 }
 
 .botao {
-  display: inline-block;
-  margin: 10px 0 20px;
-  padding: 8px 15px;
-  background-color: orange;
+  background-color: #ff3860;
   color: white;
-  text-decoration: none;
+  padding: 10px 20px;
   border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.botao:hover {
+  background-color: #e03e4f;
 }
 
 footer {
-  background-color: #1f1f1f;
+  background-color: #222;
   color: #ccc;
   text-align: center;
   padding: 20px;
+  font-size: 0.9em;
 }
