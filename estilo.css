@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: purple;
-  color: #f0f0f0;
+  color: purple;
   margin: 0;
   padding: 0;
 }
@@ -62,7 +62,7 @@ h1 {
   display: inline-block;
   margin: 10px 0 20px;
   padding: 8px 15px;
-  background-color: #ff3860;
+  background-color: orange;
   color: white;
   text-decoration: none;
   border-radius: 5px;
